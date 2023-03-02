@@ -1,0 +1,58 @@
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   push: false,
+0 silly argv   lernaVersion: '6.5.1',
+0 silly argv   '$0': '../../../.npm/_npx/d5cad42883f80c04/node_modules/.bin/lerna',
+0 silly argv   bump: 'patch'
+0 silly argv }
+1 notice cli v6.5.1
+2 verbose rootPath /home/zim/Development/learnlerna/getting-started-example3
+3 info current version 0.0.2
+4 silly isAnythingCommitted
+5 verbose isAnythingCommitted 1
+6 silly getCurrentBranch
+7 verbose currentBranch main
+8 silly hasTags
+9 verbose hasTags true
+10 silly git-describe.sync "v0.0.2-1-g93d7a00" => {"lastTagName":"v0.0.2","lastVersion":"v0.0.2","refCount":"1","sha":"93d7a00","isDirty":false}
+11 info Looking for changed packages since v0.0.2
+12 silly checking diff packages/footer
+13 silly found diff in packages/footer/src/Footer.tsx
+14 verbose filtered diff [ 'packages/footer/src/Footer.tsx' ]
+15 silly checking diff packages/header
+16 silly no diff found in header
+17 silly checking diff packages/remixapp
+18 silly no diff found in remixapp
+19 verbose updated footer
+20 verbose updated remixapp
+21 verbose git-describe undefined => "v0.0.2-1-g93d7a00"
+22 silly git-describe parsed => {"lastTagName":"v0.0.2","lastVersion":"v0.0.2","refCount":"1","sha":"93d7a00","isDirty":false}
+23 info execute Skipping git push
+24 info execute Skipping releases
+25 silly lifecycle No script for "preversion" in "root", continuing
+26 silly lifecycle No script for "preversion" in "footer", continuing
+27 silly lifecycle No script for "preversion" in "header", continuing
+28 silly lifecycle No script for "version" in "footer", continuing
+29 silly lifecycle No script for "version" in "header", continuing
+30 silly lifecycle No script for "preversion" in "remixapp", continuing
+31 silly lifecycle No script for "version" in "remixapp", continuing
+32 verbose version Updating root package-lock.json
+33 silly lifecycle No script for "version" in "root", continuing
+34 silly gitAdd [
+34 silly gitAdd   'packages/footer/package.json',
+34 silly gitAdd   'packages/footer/package-lock.json',
+34 silly gitAdd   'packages/header/package.json',
+34 silly gitAdd   'packages/header/package-lock.json',
+34 silly gitAdd   'packages/remixapp/package.json',
+34 silly gitAdd   'packages/remixapp/package-lock.json',
+34 silly gitAdd   'lerna.json',
+34 silly gitAdd   'package-lock.json'
+34 silly gitAdd ]
+35 silly gitCommit v0.0.3
+36 verbose git [ 'commit', '-m', 'v0.0.3' ]
+37 silly gitTag v0.0.3 git tag %s -m %s
+38 verbose git [ 'tag', 'v0.0.3', '-m', 'v0.0.3' ]
+39 error Error: Command failed with exit code 128: git tag v0.0.3 -m v0.0.3
+39 error fatal: tag 'v0.0.3' already exists
+39 error     at makeError (/home/zim/.npm/_npx/d5cad42883f80c04/node_modules/execa/lib/error.js:59:11)
+39 error     at handlePromise (/home/zim/.npm/_npx/d5cad42883f80c04/node_modules/execa/index.js:114:26)
